@@ -5,7 +5,7 @@ This project is a sophisticated, local-first AI agent designed to bridge the gap
 
 ---
 
-## [cite_start]🏗️ Architecture & System Design 
+## Architecture & System Design 
 
 The system follows a modular pipeline architecture to ensure low latency and high reliability:
 
@@ -16,7 +16,7 @@ The system follows a modular pipeline architecture to ensure low latency and hig
 
 ---
 
-## [cite_start]🛠️ Setup & Installation 
+## Setup & Installation 
 
 ### Prerequisites
 * **Ollama**: Install [Ollama](https://ollama.com/) and download the model:
