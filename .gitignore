@@ -1,0 +1,10 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+temp_audio/
+
+# React
+frontend/node_modules/
+frontend/build/
+.DS_Store
