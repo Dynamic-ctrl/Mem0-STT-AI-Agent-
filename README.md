@@ -8,7 +8,8 @@ Instead of interacting with a terminal, users can speak into their microphone (o
 **The Local-First Advantage:** The defining constraint of this project is privacy and edge execution. By utilizing quantized open-source models (Faster-Whisper and Llama 3 via Ollama), **zero data is sent to external cloud APIs**. The entire pipeline—from Speech-to-Text to Large Language Model inference to file execution—runs 100% locally on standard hardware.
 
 **Video Demo:** https://www.youtube.com/watch?v=W3OWmA0l2Ck
-**/nTechnical Article:** https://medium.com/@aditimehta307/building-a-voice-controlled-local-ai-agent-architecture-and-implementation-5005dcc24a21
+
+**Technical Article:** https://medium.com/@aditimehta307/building-a-voice-controlled-local-ai-agent-architecture-and-implementation-5005dcc24a21
 
 ---
 
