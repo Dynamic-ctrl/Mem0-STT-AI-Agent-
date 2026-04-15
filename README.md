@@ -1,11 +1,15 @@
 # Mem0 AI: Voice-Controlled Local AI Agent
-### AI/ML & Generative AI Developer Intern Assignment
+### Project Description
 
-This project is a sophisticated, local-first AI agent designed to bridge the gap between voice commands and system-level execution. It leverages state-of-the-art open-source models to provide a seamless, secure, and context-aware user experience.
+This project is a fully local, voice-controlled command center designed to translate spoken audio into direct system actions. 
+
+Instead of interacting with a terminal, users can speak into their microphone (or upload an audio file). The AI agent transcribes the audio, classifies the intent, extracts the necessary parameters, and executes the requested action—such as writing a Python script, summarizing text, or answering general queries—directly on the local machine.
+
+**The Local-First Advantage:** The defining constraint of this project is privacy and edge execution. By utilizing quantized open-source models (Faster-Whisper and Llama 3 via Ollama), **zero data is sent to external cloud APIs**. The entire pipeline—from Speech-to-Text to Large Language Model inference to file execution—runs 100% locally on standard hardware.
 
 ---
 
-## 🏗️ Architecture & System Design
+## Architecture & System Design
 
 The system follows a modular pipeline architecture to ensure low latency and high reliability:
 
@@ -16,7 +20,7 @@ The system follows a modular pipeline architecture to ensure low latency and hig
 
 ---
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 * **Ollama**: Install [Ollama](https://ollama.com/) and download the model:
@@ -44,7 +48,7 @@ npm start
 
 ---
 
-## ⚡ Features & Assignment Compliance
+## Features & Assignment Compliance
 
 ### Core Requirements
 * **Dual Input**: Fully supports both **Direct Microphone Input** and **Audio File Uploads** (.wav, .mp3, .webm).
@@ -60,7 +64,7 @@ npm start
 
 ---
 
-## 💻 Hardware Notes & Workarounds
+## Hardware Notes & Workarounds
 
 * **STT Selection**: I chose `faster-whisper` (base) over standard `whisper` to allow for real-time CPU-bound transcription without requiring a dedicated GPU.
 * **Inference**: Llama 3 is served locally via Ollama. For systems with less than 8GB of RAM, I recommend using the `phi3` or `mistral` model as a lightweight alternative to ensure smooth execution.
