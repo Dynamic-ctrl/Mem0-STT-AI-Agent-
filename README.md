@@ -1,4 +1,4 @@
-# Mem0 AI: Voice-Controlled Local AI Agent
+# Voice-Controlled Local AI Agent
 ### Project Description
 
 This project is a fully local, voice-controlled command center designed to translate spoken audio into direct system actions. 
